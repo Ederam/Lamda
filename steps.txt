@@ -1,0 +1,20 @@
+
+Video guia
+https://www.youtube.com/watch?v=ieLn8D3wJ6g
+Creación de una función Lambda con NET Core
+
+comandos
+Instalar las plantillas Lambda
+dotnet new -i Amazon.Lambda.Templates
+dotnet new --install Amazon.Lambda.Templates
+
+Indicar que plantilla Lambda voy a utilizar, nombre, profile que se va a utilizar y la region don de se aloja
+dotnet new lambda.EmptyFunction --name Nombre --profile default --region us-east-1
+dotnet new lambda.EmptyFunction --name MyFirtsLambda --profile default --region us-east-1
+
+
+Instalar las herramientas lambda tools
+dotnet tool install -g Amazon.Lambda.Tools
+
+
+dotnet lambda deploy-function MySimpleFunction
