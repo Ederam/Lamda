@@ -5,7 +5,7 @@ using Amazon.Lambda.Core;
 
 namespace MyFirtsLambda;
 
-public class Function
+public class SumaFunction
 {
     
     /// <summary>
@@ -14,8 +14,10 @@ public class Function
     /// <param name="input">The event for the Lambda function handler to process.</param>
     /// <param name="context">The ILambdaContext that provides methods for logging and describing the Lambda environment.</param>
     /// <returns></returns>
-    public string FunctionHandler(string input, ILambdaContext context)
+    public string FunctionHandler(Operacion input, ILambdaContext context)
     {
-        return input.ToUpper();
+        LambdaLogger.Log("Llamando a la funcion: " + context.FunctionName + " a las: " + Datetime.Now);
+        int resultado = input.Numero1 + input.Numero2;
+        return $Resultado de: { input.Numero1 } + { input.Numero2 } es { resultado };
     }
 }

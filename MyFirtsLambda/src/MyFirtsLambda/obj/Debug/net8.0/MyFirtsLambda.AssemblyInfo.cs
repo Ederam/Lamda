@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyFirtsLambda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5838c530a7437156480a7469eb05121ea56ad13e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyFirtsLambda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyFirtsLambda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

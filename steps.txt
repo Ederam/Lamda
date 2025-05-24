@@ -16,5 +16,17 @@ dotnet new lambda.EmptyFunction --name MyFirtsLambda --profile default --region 
 Instalar las herramientas lambda tools
 dotnet tool install -g Amazon.Lambda.Tools
 
-
+Este paso no se ejecuta aun// debera ser usado posteriormente
 dotnet lambda deploy-function MySimpleFunction
+
+Viculacion repositorio
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ederam/Lamda.git
+git push -u origin main
+
+continuacion
+se puede enviar mensajes al cloudwatch
+LambdaLogger.Log("Llamando a la funcion: " + context.FunctionName + " a las: " + DateTime.Now);
+
