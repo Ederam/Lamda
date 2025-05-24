@@ -17,7 +17,12 @@ Instalar las herramientas lambda tools
 dotnet tool install -g Amazon.Lambda.Tools
 
 Este paso no se ejecuta aun// debera ser usado posteriormente
-dotnet lambda deploy-function MySimpleFunction
+para ello debe tenerse configurado aws, rol, usuario
+loguearse 
+	aws configure
+Luego se despliega
+	dotnet lambda deploy-function MySimpleFunction
+Ya debera verse la funcion en aws
 
 Viculacion repositorio
 git init

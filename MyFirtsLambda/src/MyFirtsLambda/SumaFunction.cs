@@ -1,4 +1,5 @@
 using Amazon.Lambda.Core;
+using System;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -16,8 +17,8 @@ public class SumaFunction
     /// <returns></returns>
     public string FunctionHandler(Operacion input, ILambdaContext context)
     {
-        LambdaLogger.Log("Llamando a la funcion: " + context.FunctionName + " a las: " + Datetime.Now);
+        LambdaLogger.Log("Llamando a la funcion: " + context.FunctionName + " a las: " + DateTime.Now);
         int resultado = input.Numero1 + input.Numero2;
-        return $Resultado de: { input.Numero1 } + { input.Numero2 } es { resultado };
+        return $"Resultado de: { input.Numero1 } + { input.Numero2 } es { resultado }";
     }
 }

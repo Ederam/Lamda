@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyFirtsLambda
 {
-    internal class Operacion
+    public class Operacion
     {
+        public int Numero1 { get; set; }
+        public int Numero2 { get; set; }
     }
 }
